@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Margen</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Margen de Ganancia</h1>
+    <form id="marginForm">
+      <label for="venta">Costo de Venta (con IVA):</label>
+      <input type="number" id="venta" required />
+
+      <label for="costo">Costo del Producto:</label>
+      <input type="number" id="costo" required />
+
+      <label for="descuentoPersonalizado">Descuento Personalizado (%):</label>
+      <input type="number" id="descuentoPersonalizado" placeholder="Ej: 7" />
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultados" class="results"></div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
