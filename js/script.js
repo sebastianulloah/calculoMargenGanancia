@@ -1,4 +1,6 @@
-document.getElementById('marginForm').addEventListener('submit', function (e) {
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('marginForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
   const ventaConIVA = parseFloat(document.getElementById('venta').value);
@@ -27,4 +29,6 @@ document.getElementById('marginForm').addEventListener('submit', function (e) {
     <p><strong>Margen con 10% de descuento:</strong> ${margen10.toFixed(2)}%</p>
     <p><strong>Margen con ${descuentoPersonalizado}% de descuento:</strong> ${margenPersonalizado.toFixed(2)}%</p>
   `;
+});
+
 });
